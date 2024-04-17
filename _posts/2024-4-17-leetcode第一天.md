@@ -1,13 +1,13 @@
 ---
 layout:     post
-title:      (文章标题)
-subtitle:   (副标题)
-date:       2018-12-01
-author:     (作者名)
+title:      (leetcode第一天)
+subtitle:   (学习)
+date:      2024-4-17
+author:     (pennytask)
 header-img: img/the-first.png
 catalog:   true
 tags:
-    - 往事如烟
+    苦逼学习
 ---
 
 ## 数组理论基础，[704. 二分查找](https://leetcode.cn/problems/binary-search/)[35. 搜索插入位置](https://leetcode.cn/problems/search-insert-position/)[977. 有序数组的平方](https://leetcode.cn/problems/squares-of-a-sorted-array/)
