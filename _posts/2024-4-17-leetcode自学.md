@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      (leetcode第一天)
+title:      (leetcode自学)
 subtitle:   (学习)
 date:      2024-4-17
 author:     (pennytask)
