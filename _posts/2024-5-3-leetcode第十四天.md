@@ -79,4 +79,36 @@ public:
     }
 };
 ```
+##### 中序迭代
+
+```c++
+class Solution {
+public:
+    vector<int> inorderTraversal(TreeNode* root) {
+           vector<int>res;
+         stack<TreeNode*>st;
+         if(root==nullptr){
+           return res;
+         }
+      
+         TreeNode *cur=root;
+         while(!st.empty()||cur!=nullptr){
+           if(cur!=nullptr){
+            st.push(cur);
+            cur=cur->left;
+           }
+           else{
+             cur=st.top();
+             st.pop();
+             res.push_back(cur->val);
+             cur=cur->right;
+           }
+         }
+         return res;
+    
+    }
+};
+```
+
+
 
