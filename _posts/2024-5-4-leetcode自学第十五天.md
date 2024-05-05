@@ -97,3 +97,42 @@ public:
 - [107.二叉树的层次遍历II(opens new window)](https://leetcode.cn/problems/binary-tree-level-order-traversal-ii/) 完成
 - [199.二叉树的右视图(opens new window)](https://leetcode.cn/problems/binary-tree-right-side-view/)完成
 - [637.二叉树的层平均值(opens new window)](https://leetcode.cn/problems/average-of-levels-in-binary-tree/)完成
+- ### [116. 填充每个节点的下一个右侧节点指针](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/)
+
+```c++
+class Solution {
+public:
+    Node* connect(Node* root) {
+        queue<Node*>que;
+        if(root==NULL)return root;
+        que.push(root);
+        while(!que.empty()){
+         
+         int size=que.size();
+        
+         for(int i=0;i<size;i++){
+            Node* q=que.front();
+            if(i<size-1){
+                 que.pop();
+                 q->next=que.front();
+            }
+            else{
+                que.pop();
+                q->next==NULL;}
+            if(q->left!=NULL)que.push(q->left);
+            if(q->right!=NULL)que.push(q->right);
+         }
+        }
+        return root;
+        
+    }
+};
+```
+
+  不需要两个指针，出队列的只要不是最后一个节点，指向队首就行了。
+
+##### [104. 二叉树的最大深度](https://leetcode.cn/problems/maximum-depth-of-binary-tree/)  完成
+
+##### [111. 二叉树的最小深度 ](https://leetcode.cn/problems/minimum-depth-of-binary-tree/) 完成 层次遍历 :当左右孩子都没有时候直接返回
+
+
