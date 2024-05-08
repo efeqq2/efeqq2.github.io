@@ -4,7 +4,7 @@ title:      (leetcode学习第十八天)
 subtitle:   (leetcode学习第十八天)
 date:       2024-5-8
 author:     (pennytask)
-header-img: wallhaven-l8v3ey.png
+header-img: img/wallhaven-l8v3ey.png
 catalog:   true
 tags:
     - 学习
