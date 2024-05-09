@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      (leetcode学习第天)
-subtitle:   (leetcode学习第天)
-date:       2024--
+title:      (leetcode学习第十九天)
+subtitle:   (leetcode学习第十九天)
+date:       2024-5-10
 author:     (pennytask)
 header-img: img/wallhaven-werdv6.png
 catalog:   true
