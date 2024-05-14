@@ -1,10 +1,10 @@
 ---
 layout:     post
-title:      (leetcode学习第二十一与二十二天)
-subtitle:   (leetcode学习第二十一与二十二天)
+title:      (leetcode学习第二十三与二十二天)
+subtitle:   (leetcode学习第二十三与二十二天)
 date:       2024-5-14
 author:     (pennytask)
-header-img: 
+header-img: img/wallhaven-werdv6.png
 catalog:   true
 tags:
     - 学习
