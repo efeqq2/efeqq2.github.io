@@ -4,7 +4,7 @@ title:      (leetcode学习第二十五天)
 subtitle:   (leetcode学习第二十五天)
 date:       2024-5-15
 author:     (pennytask)
-header-img: img/
+header-img: img/wallhaven-wekq8q.jpg
 catalog:   true
 tags:
     - 学习
