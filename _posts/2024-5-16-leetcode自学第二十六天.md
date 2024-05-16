@@ -4,7 +4,7 @@ title:      (leetcode学习第二十六天)
 subtitle:   (leetcode学习第二十六天)
 date:       2024-5-16
 author:     (pennytask)
-header-img: img/
+header-img: img/wallhaven-1pew8g.jpg
 catalog:   true
 tags:
     - 学习
