@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      (leetcode学习第二十七天)
-subtitle:   (leetcode学习第二十七天)
+title:      (leetcode学习第三十一天)
+subtitle:   (leetcode学习第三十一天)
 date:       2024-5-17
 author:     (pennytask)
 header-img: img/wallhaven-m3m8y9.jpg
