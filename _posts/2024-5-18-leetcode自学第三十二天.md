@@ -58,9 +58,9 @@ public:
 假设现在 result 向量中的行程是 ["JFK", "SFO"]。根据给定的 targets 字典:
 
 unordered_map<string, unordered_map<string, int>> targets = {
-    {"JFK", {["SFO", 2], {"ATL", 3}}},
-    {"SFO", {{"ATL", 2}}},
-    {"ATL", {{"JFK", 1}, {"SFO", 1}}}
+    {"JFK", {["SFO", 2], ["ATL", 3]},
+    {"SFO", {["ATL", 2]}},
+    {"ATL", {["JFK", 1],["SFO", 1] }}
 };
 
 1. 第一次循环,`target` 会被赋值为 `{"ATL", 2}`。由于 `target.second > 0` 为 true,说明我们还可以从 `"SFO"` 飞往 `"ATL"` 这个目的地。
