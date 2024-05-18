@@ -58,7 +58,7 @@ public:
 假设现在 result 向量中的行程是 ["JFK", "SFO"]。根据给定的 targets 字典:
 
 unordered_map<string, unordered_map<string, int>> targets = {
-    {"JFK", {{"SFO", 2}, {"ATL", 3}}},
+    {"JFK", {["SFO", 2], {"ATL", 3}}},
     {"SFO", {{"ATL", 2}}},
     {"ATL", {{"JFK", 1}, {"SFO", 1}}}
 };
