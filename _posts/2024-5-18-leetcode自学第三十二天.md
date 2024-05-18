@@ -55,7 +55,7 @@ public:
 
   
 
-```
+```c++
 假设现在 result 向量中的行程是 ["JFK", "SFO"]。根据给定的 targets 字典:
 
 unordered_map<string, unordered_map<string, int>> targets = {
@@ -83,7 +83,7 @@ for (const vector<string>& vec : tickets) {
 
    语法问题，map的查询只通过key值进行
 
-```
+```c++
 vector<vector<string>> tickets = {
     {"JFK", "SFO"},
     {"JFK", "ATL"},
@@ -93,5 +93,9 @@ vector<vector<string>> tickets = {
 };
 
 ```
+
+​    迭代器vec每次给出一对，所以targets[vec[0]][vec[1]][vec[1]]，而且map在访问时，先查询vec[0]是否存在，不存在就创建一个，然后继续查找vec[1]没有就创建一个，++时是对value++，所以直接加到int上
+
+
 
 ​    迭代器vec每次给出一对，所以targets[vec[0]][vec[1]][vec[1]]，而且map在访问时，先查询vec[0]是否存在，不存在就创建一个，然后继续查找vec[1]没有就创建一个，++时是对value++，所以直接加到int上
