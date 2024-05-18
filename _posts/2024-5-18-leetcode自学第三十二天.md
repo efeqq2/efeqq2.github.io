@@ -55,7 +55,6 @@ public:
 
   
 
-```c++
 假设现在 result 向量中的行程是 ["JFK", "SFO"]。根据给定的 targets 字典:
 
 unordered_map<string, unordered_map<string, int>> targets = {
@@ -63,7 +62,6 @@ unordered_map<string, unordered_map<string, int>> targets = {
     {"SFO", {{"ATL", 2}}},
     {"ATL", {{"JFK", 1}, {"SFO", 1}}}
 };
-```
 
 1. 第一次循环,`target` 会被赋值为 `{"ATL", 2}`。由于 `target.second > 0` 为 true,说明我们还可以从 `"SFO"` 飞往 `"ATL"` 这个目的地。
 2. 接下来,我们将 `"ATL"` 添加到 `result` 向量的末尾,得到 `["JFK", "SFO", "ATL"]`。同时,将 `target.second` 减 1,变为 1。
@@ -83,7 +81,6 @@ for (const vector<string>& vec : tickets) {
 
    语法问题，map的查询只通过key值进行
 
-```c++
 vector<vector<string>> tickets = {
     {"JFK", "SFO"},
     {"JFK", "ATL"},
@@ -92,9 +89,8 @@ vector<vector<string>> tickets = {
     {"ATL", "SFO"}
 };
 
-```
-
 ​    迭代器vec每次给出一对，所以targets[vec[0]][vec[1]][vec[1]]，而且map在访问时，先查询vec[0]是否存在，不存在就创建一个，然后继续查找vec[1]没有就创建一个，++时是对value++，所以直接加到int上
+
 
 
 
