@@ -53,4 +53,30 @@ public:
 ```
 
 想的是明白的，写没写明白，每次都要走最远的，但是如何更新写的不明白，应当是在能够遍历到的范围内，对每个能覆盖到的元素所能覆盖的范围进行比较。
+### [45. 跳跃游戏 II](https://leetcode.cn/problems/jump-game-ii/)
+
+```c++
+class Solution {
+public:
+    int jump(vector<int>& nums) {
+         if (nums.size() == 1) return 0;
+        int curDistance = 0;    // 当前覆盖最远距离下标
+        int ans = 0;            // 记录走的最大步数
+        int nextDistance = 0;
+        for(int i=0;i<nums.size();i++){
+            nextDistance=max(nums[i]+i,nextDistance);
+            if(i==curDistance){
+                curDistance=nextDistance;
+                ans++;
+                if (nextDistance >= nums.size() - 1) break;
+            }
+            
+        }
+        return  ans;
+    }
+};
+```
+
+   在每一步对比当前遍历到的最远距离，如果当前遍历的数据已经是上一步所能遍历的最远位置，那么就要考虑更新下一次遍历的区间，并且判断是否要结束，当下一步所能遍历的最大范围已经到终点，跳出即可。
+
 
