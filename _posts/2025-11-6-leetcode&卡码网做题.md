@@ -4,7 +4,7 @@ title:      (leetcode做题)
 subtitle:   (学习)
 date:      2025-11-6
 author:     (pennytask)
-header-img: img/the-first.png
+header-img: img/wallhaven-1pew8g.jpg
 catalog:   true
 tags:
     苦逼学习
